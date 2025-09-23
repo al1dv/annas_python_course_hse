@@ -23,9 +23,9 @@
 
 ## Описание фичи 2
 
-<https://upload.wikimedia.org/wikipedia/commons/f/f0/Mops_oct09_cropped2.jpg>
+<img width="2587" height="964" alt="image" src="https://github.com/user-attachments/assets/bf984433-8c2b-4f3e-b309-2c5e67f30300" />
 
-Блок-схема с описанием архитектуры решения ([источник изображения])(https://alvinntnu.github.io/python-notes/_images/nlp-pipeline.png))
+Блок-схема с описанием архитектуры решения ([источник изображения](https://alvinntnu.github.io/python-notes/_images/nlp-pipeline.png))
 
 ## Описание фичи 3
 
