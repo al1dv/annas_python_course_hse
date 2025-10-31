@@ -1,0 +1,57 @@
+# task 1
+full_name = 'Иванов Иван Иванович'
+last_name, name, patronym = full_name.split()
+print(f'{last_name.title()} {first_name[0].upper()}. {patronym[0].upper()}.')
+
+
+
+# task 2
+password = 'Password123'
+has_num = password.find(int)
+has_CL = password.find.upper
+length_ok = len(password)
+
+print(f'Длина ОК:{length_ok}')
+
+
+# task 3
+path = "/home/user/documents/report.pdf"
+file = path.split('/')[-1]
+file_without_ext = file.split('.')[0]
+print(file_without_ext)
+
+
+# task 4
+text = 'Звоните по номеру +7-123-456-78-90 или +7-987-654-32-10'
+phone_num = re.findall(r'\+\d-\d{3}-\d{3}-\d{2}-\d{2}', text)
+print(phone_num)
+
+
+# task 5
+text = 'ЭТОТ ТЕКСТ ПИСАЛИ КАПСОМ'
+ok_text = text.strip().lower().capitalize()
+print(ok_text)
+
+# task 6
+sentence = 'Быстрый рыжий лис прыгает через ленивую собаку'
+words_num =len(sentence.split())
+print(words_num)
+
+# task 7
+text = 'Встречаемся 2023-12-31 в 20:00'
+new_text = text.replace('2023-12-31', '31.12.2023')
+print(new_text)
+
+# task 8
+filename = 'my_document.backup.pdf'
+print(filename.endswith('pdf'))
+
+# task 9
+url = "https://example.com/category/product.html"
+domain = url.split('/')[2]
+print(domain)
+
+# task 10
+full_name = 'Maria Ivanova'
+login = full_name[0].lower() + '_' + full_name.split()[1].lower()
+print(login)
