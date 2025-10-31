@@ -1,0 +1,105 @@
+# task 1
+rubles = 5500
+exchange_rate = 0.0092  
+euros = rubles * exchange_rate
+print(f'{rubles} руб = {euros:.2f}')
+
+# task 2
+celsius = 23.456
+fahr = celsius * 9/5 + 32
+print(f'{celsius}°C = {fahr:.1f}')
+
+# task 3
+first_name = "иван"
+last_name = "петров"
+print(f'{first_name[0].upper()}. {last_name.capitalize()}')
+
+# task 4
+price = 2500
+discount = 15  # процентов
+final_price = int(price - (price * discount / 100))
+print(f'Цена: {price} руб, со скидкой {discount}%: {final_price}')
+
+# task 5
+downloaded = 355.678
+total = 500
+perc = (downloaded * 100) / total
+print(f'Загружено: {downloaded:.1f} MB ({perc:.1f}%)')
+
+# task 6
+city = "Москва"
+temp = -5.3
+humidity = 85
+print(f"Погода в {city}: {temp}C '\n' Влажность: {humidity}%")
+
+# task 7
+stock_name = "GAZP"
+price = 158.4567
+change = 2.345
+print(f"{stock_name}: {price:.2f} руб. (+{change:.2f}%)")
+
+#task 8
+address = "ул. Пушкина, д. 15"
+area = 75.5
+price = 12500000
+print(f"Продается квартира: {address} '\n' Площадь: {area} кв.м. '\n' Цена: {price: ,} руб")
+
+# task 9
+pi = 3.1415926535
+radius = 5.5
+print(f"Площадь круга (r=5.5): {pi*pow(radius,2):.4f}")
+
+#task 10
+completed_tasks = 8
+total_tasks = 15
+hours_spent = 45.75
+print(f"Выполнено: {completed_tasks}/{total_tasks} задач ({completed_tasks*100/total_tasks:.1f}%) '\n' Затрачено времени: {hours_spent:.1f} часов")
+
+
+# task 1
+text = "   Python - отличный язык для начинающих! Python мощный.   "
+
+# 1. Уберите лишние пробелы
+clean_text = text.strip()
+# 2. Подсчитайте общее количество символов
+total_chars = len(text)
+# 3. Подсчитайте сколько раз встречается слово "Python"
+python_count = text.find("Python")
+# 4. Проверьте, начинается ли текст с "Python"
+starts_with_python = text.startswith("Python")
+# 5. Переведите текст в нижний регистр
+lower_text = text.lower()
+print(f"Очищенный текст: '{clean_text}'")
+print(f"Всего символов: {total_chars}")
+print(f"Слов 'Python' найдено: {python_count}")
+print(f"Начинается с 'Python': {starts_with_python}")
+print(f"В нижнем регистре: {lower_text}")
+
+# task 2
+user_data = "ivanov:Иван:Петров:25:Москва"
+
+# 1. Разбейте строку по разделителю ":"
+username, first_name, last_name, age, city = user_data.split(":")
+# 2. Извлеките отдельные данные
+
+print(f"Логин: {username}")
+print(f"Имя: {first_name}")
+print(f"Фамилия: {last_name}")
+print(f"Возраст: {age}")
+print(f"Город: {city}")
+
+# task  3
+email = "  USER@EXAMPLE.COM  "
+
+# 1. Уберите пробелы и переведите в нижний регистр
+clean_email = email.strip().lower()
+# 2. Проверьте, содержит ли email символ "@"
+has_at = email.find("@")
+# 3. Проверьте, заканчивается ли на ".com" или ".ru"
+ends_with_com = clean_email.endswith(" .com")
+ends_with_ru = clean_email.endswith(" .ru")
+
+print(f"Очищенный email: {clean_email}")
+print(f"Содержит @: {has_at}")
+print(f"Заканчивается на .com: {ends_with_com}")
+print(f"Заканчивается на .ru: {ends_with_ru}")
